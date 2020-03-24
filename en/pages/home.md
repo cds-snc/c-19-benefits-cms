@@ -2,12 +2,12 @@
 layout: layouts/home.njk
 title: Home
 date: 2016-01-01T00:00:00.000Z
-permalink: /
+permalink: /{{ locale }}/index.html
 eleventyNavigation:
   key: Home
   order: 0
 ---
-# Welcome
+# Welcome - English Version
 
 This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
 
