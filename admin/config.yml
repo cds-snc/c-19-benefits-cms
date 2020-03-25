@@ -5,6 +5,9 @@ backend:
   base_url: https://f1jj4za18c.execute-api.us-east-1.amazonaws.com
   auth_endpoint: /production/auth
 
+# when using the default proxy server port
+# local_backend: true
+
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
