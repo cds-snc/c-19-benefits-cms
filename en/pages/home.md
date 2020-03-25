@@ -8,12 +8,6 @@ eleventyNavigation:
   key: Home
   order: 0
 intro: >-
-  <div class="row">
-
-
-  <div class="col-md-10">
-
-
   # Need money to help with COVID-19?
 
 
@@ -33,9 +27,6 @@ intro: >-
   Regardless of your employment situation, you could receive one-time payments
   in May to help offset costs of the COVID-19 crisis. Details are at the end of
   this information.
-
-
-  - - -
 ---
 ## If you’ve stopped working, been laid off or lost self-employed work
 
