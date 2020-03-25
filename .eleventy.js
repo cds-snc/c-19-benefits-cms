@@ -25,13 +25,6 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
   });
 
-  // date filter (localized)
-  eleventyConfig.addNunjucksFilter("localizedDate", function(date, format, locale) {
-    locale = locale ? locale : "en";
-    moment.locale(locale);
-    return moment(date).format(format);
-  });
-
   // Date formatting (machine readable)
   eleventyConfig.addFilter("machineDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
@@ -74,9 +67,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  const pluginTOC = require('eleventy-plugin-toc')
+  eleventyConfig.addPlugin(pluginTOC)
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
+  eleventyConfig.addPassthroughCopy("static/assets/");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
 
@@ -91,6 +88,8 @@ module.exports = function(eleventyConfig) {
   let opts = {
     permalink: false
   };
+  
+  eleventyConfig.setLibrary('md', markdownIt(options).use(markdownItAnchor, opts))
 
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts)

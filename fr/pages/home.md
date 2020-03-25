@@ -3,11 +3,12 @@ layout: layouts/home.njk
 title: Home
 date: 2016-01-01T00:00:00.000Z
 permalink: /{{ locale }}/index.html
+translationKey: homepage
 eleventyNavigation:
   key: Home FR
   order: 0
 ---
-# Welcome
+# Need money to help with COVID-19? - FR
 
 This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
 

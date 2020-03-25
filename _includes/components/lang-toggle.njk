@@ -1,0 +1,35 @@
+{# loop though metadata.languages #}
+{% for lgg in metadata.languages %}
+  {% if loop.first %}<ul class="c-lggnav">{% endif %}
+
+  {# set translatedUrl to the homepage of that language by default #}
+  {% set translatedUrl = "/" + lgg.code + "/" %}
+
+  {# set current language class #}
+  {% set activeClass = "is-active" if lgg.code == locale else "" %}
+
+  {# loop through all the content of the site #}
+  {% for item in collections.all %}
+
+    {# for each item in the loop, check if
+    - its translationKey matches the current item translationKey
+    - its locale matches the code of the language we are looping through #}
+    {% if item.data.translationKey == translationKey and item.data.locale == lgg.code %}
+      {% set translatedUrl = item.url %}
+    {% endif %}
+
+  {% endfor%}
+
+  {% if lgg.code !== locale %}
+    <section id="wb-lng" class="text-right">
+      <h2 class="wb-inv">Language selection</h2>
+      <ul class="list-inline margin-bottom-none">
+          <li>
+              <a lang="{{ locale }}" hreflang="{{ locale }}" href="{{ translatedUrl }}">{{lgg.label}}</a>
+          </li>
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if loop.last %}</ul>{% endif %}
+{% endfor %}

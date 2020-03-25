@@ -7,5 +7,15 @@
   "fr": {
     "metaTitle": "Titre en français",
     "metaDescription": "Description en français"
-  }
+  },
+  "languages": [
+    {
+      "label": "English",
+      "code": "en"
+    },
+    {
+      "label": "Français",
+      "code": "fr"
+    }
+  ]
 }

@@ -4,6 +4,7 @@ title: Get in touch
 section: contact
 date: 2018-01-01
 permalink: /{{ locale }}/contact/index.html
+translationKey: contact
 eleventyNavigation:
   key: Contact
   order: 3
