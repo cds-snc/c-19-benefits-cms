@@ -1,8 +1,5 @@
 name: Eleventy Build
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   build_deploy:
@@ -18,9 +15,21 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Deploy
+      - name: Deploy Bilingual
         uses: bacongobbler/azure-blob-storage-upload@v1.0.0
         with:
           source_dir: _site
           container_name: $web
           connection_string: ${{ secrets.AZ_ConnectionString }}
+      - name: Deploy English
+        uses: bacongobbler/azure-blob-storage-upload@v1.0.0
+        with:
+          source_dir: _site/en
+          container_name: $web
+          connection_string: ${{ secrets.AZ_EN_ConnectionString }}
+      - name: Deploy French
+        uses: bacongobbler/azure-blob-storage-upload@v1.0.0
+        with:
+          source_dir: _site/fr
+          container_name: $web
+          connection_string: ${{ secrets.AZ_FR_ConnectionString }}
