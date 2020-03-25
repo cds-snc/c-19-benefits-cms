@@ -2,10 +2,10 @@
  Using Elventy + Netlify CMS + Netlify. Mostly copied (and stripped down) from the [Eleventy-Netlify-Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate)
 
  Features the [https://wet-boew.github.io/v4.0-ci/index-en.html}](Web Experience Toolkit (WET))
- 
+
 ## Want to try it out now?
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://github.com/katedee/c19-one-page)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/katedee/c19-one-page&stack=cms)
 
 Clicking the button above will deploy a copy of the demo website to your Netlify
 account (you can create an account during this process if you don't have one)
