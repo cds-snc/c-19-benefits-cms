@@ -22,7 +22,7 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-      - { label: "Intro", name: "intro", widget: "markdown" }
+      - { label: "Intro", name: "intro", widget: "markdown", hint: "This text comes before the pages Table of Contents. Leave blank if you want the Table of Contents to appear first" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "frPages"
     label: "Page - FR"
@@ -37,5 +37,5 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-      - { label: "Intro", name: "intro", widget: "markdown" }
+      - { label: "Intro", name: "intro", widget: "markdown", hint: "This text comes before the pages Table of Contents. Leave blank if you want the Table of Contents first" }
       - { label: "Body", name: "body", widget: "markdown" }
