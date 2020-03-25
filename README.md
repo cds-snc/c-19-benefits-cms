@@ -1,37 +1,11 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
+# A simple one-page C-19 Benefits info page
+ Using Elventy + Netlify CMS + Netlify. Mostly copied (and stripped down) from the [Eleventy-Netlify-Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate)
 
-# Eleventy Netlify Boilerplate
-
-## What is it?
-
-A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
-
-Use it as a starter for your own JAMstack projects, or as an easy way to get started building websites with Eleventy.
-
-Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
-
-🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
-
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com/)
-
-## Features
-
-* NEW: Now with [Eleventy v0.10.0](https://github.com/11ty/eleventy/releases/tag/v0.10.0) freshness! :doughnut:
-* NEW: Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
-* Sample pages and a blog with tag support
-* Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
-* Includes a working contact form
-* CSS 2kb minified, inlined for fastest page render
-* Optional pipeline for minified inline JS
-* Pre-builds and minifies your HTML too
-* Uses Markdown files for content
-* Uses Nunjucks (or Liquid) templates for layout
-* 100% Javascript framework free
-* Continuous Deployment workflow via Netlify
-
+ Features the [https://wet-boew.github.io/v4.0-ci/index-en.html}](Web Experience Toolkit (WET))
+ 
 ## Want to try it out now?
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://github.com/katedee/c19-one-page)
 
 Clicking the button above will deploy a copy of the demo website to your Netlify
 account (you can create an account during this process if you don't have one)
@@ -75,7 +49,7 @@ If you need any help with setting up Netlify CMS, you can reach out to the Netli
 ### 1. Clone this repository:
 
 ```
-git clone https://github.com/danurbanowicz/eleventy-netlify-boilerplate.git my-blog-name
+git clone https://github.com/katedee/c19-one-page my-blog-name
 ```
 
 
@@ -113,8 +87,3 @@ Or in debug mode:
 DEBUG=* npx @11ty/eleventy
 ```
 
-## Bug reports, feature requests, etc
-
-This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR.
-
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
