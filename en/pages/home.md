@@ -27,7 +27,10 @@ intro: >-
   Regardless of your employment situation, you could receive one-time payments
   in May to help offset costs of the COVID-19 crisis. Details are at the end of
   this information.
+
+  ***
 ---
+
 ## If you’ve stopped working, been laid off or lost self-employed work
 
 Which program you apply to depends on whether you’re eligible for EI.

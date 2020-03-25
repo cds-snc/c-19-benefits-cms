@@ -1,6 +1,8 @@
 ---
 layout: layouts/base-wet.njk
 section: home
+templateEngineOverride: njk,md
 ---
-
+{{ intro }}
+{{ content | toc | safe }}
 {{ layoutContent | safe }}
