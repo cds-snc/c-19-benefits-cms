@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master # Branch to update (optional; defaults to master)
+  repo: cds-snc/c-19-benefits-cms
+  base_url: https://f1jj4za18c.execute-api.us-east-1.amazonaws.com
+  auth_endpoint: /production/auth
 
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
